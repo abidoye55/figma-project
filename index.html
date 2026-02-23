@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+ 
+  body{
+ font-family: Roboto;
+ margin: 0;
+
+  }
+  .containerr {
+  background-color: rgba(30, 40, 50, 0.05);
+  height: 600px;
+  
+}
+  .parent{
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto; 
+    
+  }
+.header{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: 1px rgba(0, 0, 0, 0.15) solid;  
+}
+.head-icon{
+  display: flex;
+}
+
+.head-icon img{
+width: 25px;
+height: 25px ;
+
+}
+.head-icon button{
+width: 67px;
+height: 21px;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+background-color: transparent;
+}
+.right-section{
+  display: flex;
+  gap: 22px;
+}
+.goods-section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+ 
+}
+.goods-section a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.head-img{
+  width: 324px;
+  margin-right: 70px;
+}
+
+
+.head-text .collections{
+  width: 360px;
+  font-weight: 300;
+  font-size: 54px;
+  font-style: light;
+  letter-spacing: 0;
+  line-height: 55px;
+  margin-bottom: 0;
+}
+.head-text .para{
+font-weight: 400;
+font-size: 25px;
+line-height: 55px;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+}
+.flex button{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.head-text button{
+  cursor: pointer;
+  background-color: rgba(30, 40, 50, 1);
+  color: white;
+  padding: 19px 26px 19px 26px;
+  font-size: 29px;
+  cursor: pointer;
+  
+}
+.button-icon{
+  width: 30px;
+  height: 30px;
+}
+.relative{
+  position: relative;
+}
+/* .absolute{
+position: absolute;
+width: 132.34px;
+height: 66.6px;
+top: 435px;
+rotate: -20deg;
+left: -20px;
+}
+.absolute2{
+  width: 195px;
+  position: absolute;
+  left: 1225px;
+  rotate: -1deg;
+  top: 215px;
+} */
+.cointainer2{
+ width: 80%;
+ max-width: 960px;
+ margin: 0 auto; 
+}
+.brand{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.brand img{
+  width: 120px;
+  cursor: pointer;
+}
+.hot-category{
+  display: flex;
+  align-items: center;
+  
+}
+.hot-category p {
+ text-wrap: nowrap;
+rotate: -90deg;
+margin-right: -120px;
+margin-left: -140px;
+text-transform: uppercase;
+}
+.card img{
+  width: 465px;
+}
+.flex2{
+  display: flex;
+}
+.flex2 img{
+  width: 230px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.newsletter{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.top-section-product{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+ align-items: center;
+}
+/* .product-list{
+displa: flex;
+justify-conten: center;
+gap: 200px;
+} */
+.product-list a{
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+  
+}
+
+.filter-btn button{
+  background-color: black;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.grid{
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  margin-bottom: 10px;
+  
+  
+}
+.grid img{
+  width: 220px;
+  
+}
+.product-info h6{
+  font-family: openSans;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+}
+.price-tag{
+  display: flex;
+  justify-content: space-between;
+}
+.price-tag p{
+  margin: 0;
+  font-family: openSans;
+  font-size: 15px;
+  line-height: 100%;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.price-tag p:first-child {
+  color: rgba(0, 0, 0, 0.5);
+  
+}
+.promo{
+display: flex;
+justify-content: space-between;
+}
+.promo p:first-child {
+  text-decoration: line-through;
+}
+.promo p:last-child {
+color: rgba(255, 111, 97, 1);
+cursor: pointer;
+}
+.background-img img{
+ width: 100%;
+}
+.background-img{
+  position: relative;
+  margin-top: 60px;
+}
+.absolute-img{
+  position: absolute;
+  top: 20px;
+  left: 980px;
+}
+.absolute-img2{
+  position: absolute;
+  top: 110px;
+  left: 810px;
+}
+.absolute-text {
+  color: white;
+  position: absolute;
+  top: 215px;
+  width: 500px;
+  left: 810px;
+  line-height: 40px;
+  font-size: 26px;
+}
+.absolute-text button {
+padding: 19px 26px 19px 26px;
+font-size: 20px;
+margin-top: 20px;
+cursor: pointer;
+}
+.containerr2 {
+ background-color: rgba(30, 40, 50, 0.05); 
+
+}
+
+.products-discounts h2 {
+display: flex;
+text-align: center;
+justify-content: center;
+padding-top: 60px;
+padding-bottom: 20px;
+font-family: roboto;
+font-weight: 500;
+text-transform: capitalize;
+}
+
+.insta-img{
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+.insta-img img{
+  width: 150px;
+}
+
+.products-dis h2 {
+display: flex;
+justify-content: center;
+padding-top: 50px;
+font-family: roboto;
+font-weight: 500;
+
+}
+.products-dis  .type-email{
+display: flex;
+justify-content: center;
+gap: 10px;
+font-size: 8px;
+font-family: openSans;
+padding-bottom: 50px;
+padding-top: 20px;
+}
+.type-email input {
+   width: 280px;
+   border: none;
+   border-bottom: 1px solid black;
+   background-color: rgba(30, 40, 50, 0); 
+  padding: 5px 8px; 
+}
+.type-email button{
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent; 
+  padding: 5px 8px; 
+  font-size: 10px;
+  font-family: openSans;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+}
+.parentt{
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto; 
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  gap: 20px;
+}
+.logoo {
+  padding-top: 20px;
+}
+.logoo .log {
+  width: 180px;
+  height: 34px;
+
+}
+
+.logoo p {
+width: 370px;
+text-transform: capitalize;
+color: rgba(30, 40, 50, 0.75);
+line-height: 30px;
+font-family: openSans;
+margin-top: 0;
+}
+.logoo .social-apps {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;  
+}
+.footer-head p {
+text-transform: capitalize;
+color: rgba(30, 40, 50, 0.75);
+font-family: openSans;
+margin-bottom: 0;
+}
+.footer2 {
+  background-color: rgba(30, 40, 50, 1);
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-flex p {
+  font-size: 14px;
+  font-family: openSans;
+}
+.footer-flex img {
+  margin: 14px;
+}
+.footer-flex button {
+  background-color: rgba(30, 40, 50, 1);
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  padding: 5px 15px;
+  border: none;
+  align-items: center;
+  font-size: 16px;
+  font-family: openSans;
+  font-weight: 400;
+  cursor: pointer;
+}
+@media screen and (max-width: 1354px) {
+  .background-img img, .absolute-img2, .absolute-text {
+    display: none;
+}
+}
+@media screen and (max-width: 1200px) {
+
+  .head-img {
+    display: none;
+  } 
+  .containerr {
+  height: auto;
+  }
+  .head-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .collections {
+  font-size: 36px;
+  width: 100%;
+  }
+  .para {
+    font-size: 18px;
+    width: 100%;
+  }
+  .brand {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+    
+}
+.brand img {
+  width: 100px;
+}
+
+.flex {  flex-direction: column;
+  align-items: center;
+}
+body{
+  overflow-x: hidden;
+  max-width: 100%;
+}
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }   
+  .hot-category p {
+    display: none;
+  }
+ 
+  .hot-category .card img {
+    width: 230px;
+  }       
+  .hot-category {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.insta-img {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products-dis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.logoo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+}
+@media screen and (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-section img {
+    display: none;
+  
+  }
+ .goods-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  } 
+  .flex2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-list {
+  font-size: 10px;
+  }
+  .footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+.footer-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.footer-head h6 {
+  font-size: 16px;
+  margin-bottom: 0;
+}   
+.footer-flex {  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.logoo p {
+  width: 100%;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <div class="relative">
+   <!-- <div class="absolute"><img src="images/Frame-2.png" alt=""></div>
+   <div class="absolute2"><img src="images/Frame.png" alt=""></div> -->
+  <div class="containerr">
+   <div class="parent">
+    
+ <nav class="header">
+    <div class="left-section"><img src="icon/icon.png" ></div>
+    <div class="middle section"><img src="icon/logo.png" alt=""></div>
+    <div class="right-section">
+      <div class="head-icon">
+      <img src="icon/v6-icon (free).png" alt="">
+      <button>Account</button></div>
+      <div class="head-icon">
+      <img src="icon/icon-2.png" alt="">
+      <button>shopping</button></div>
+     </div>
+    </nav>
+  
+  <div class="goods-section">
+  <a href="">Jewely & Accessories</a>
+  <a href="">clothing & Shoe</a> 
+  <a href="">Home & Living</a>
+  <a href="">Wedding & Party </a>
+  <a href="">Toys & Entertainment</a>
+  <a href="">Art & Collectible</a>
+  <a href="">Craft Sipplies & Tools</a>
+  </div> 
+ 
+
+ <div class="flex">
+    <div class="head-text">
+      <p class="collections">Collections</p>
+      <p class="para">you can explore ans shop many differnt collection from various barands here.</p>
+<button> <img class="button-icon" src="icon/v6-icon (free)-2.png" alt="">Shop Now</button>  
+    </div>
+    <div > <img class="head-img" src="images/image-product.png" alt=""></div>
+  </div> 
+  </div> 
+ </div> 
+  </div>
+ </div>
+ 
+ <div class="cointainer2">
+  <div class="brand">
+  <div><img src="brand/01.png" alt=""></div>
+  <div><img src="brand/2.png" alt=""></div>
+  <div><img src="brand/brand-3.png" alt=""></div>
+  <div><img src="brand/brand-4.png" alt=""></div>
+  <div><img src="brand/5.png" alt=""></div>
+  </div>
+  <div>
+  </div>
+  
+  <div class="hot-category">
+ <p>Explore new and popular styles</p>
+ <div class="card">
+<img src="images/card.png" alt=""></div>
+ <div>
+  <div class="flex2">
+    <img src="images/card-2.png" alt="">
+    <img src="images/card-3.png" alt="">
+  </div>
+  <div class="flex2">
+    <img src="images/card-4.png" alt="">
+    <img src="images/card-5.png" alt="">
+  </div>
+ </div>
+  </div>
+  <div class="newsletter">
+   <h1> or subscribe to the newsletter</h1> 
+  </div>
+  <div class="top-section-product">
+  <div class="product-list">
+    <a href="">All Products</a>
+    <a href="">T-Shirt</a>
+    <a href="">Hoodies</a>
+    <a href="">Jacket</a>
+  </div>
+  <div class="filter-btn">
+    <button><img src="icon/v-icon (free).png" alt="">Filter</button>
+  </div>
+  </div>
+  
+  <div class="grid">
+    <div class="product-info">
+    <img src="product/card.png" alt="">
+   <h6>Adicolor Classics Joggers</h6>
+   <div class="price-tag">
+    <p>Dress</p>
+    <p>$63.85</p>
+   </div>
+  </div>
+    <div class="product-info">
+    <img src="product/top-product2.png" alt="">
+    <h6>Nike Sportswear Futura Luxe</h6>
+    <div class="price-tag">
+    <p>Bag</p>
+    <p>$130.00</p>
+   </div>
+    </div>
+    <div class="product-info">
+    <img src="product/top-product-3.png" alt="">
+    <h6>Geometric print Scarf</h6>
+    <div class="price-tag">
+    <p>Scarf</p>
+    <p>$53.00</p>
+   </div>
+    </div>
+    <div class="product-info">
+    <img src="product/top-product-4.png" alt="">
+     <h6>Yellow Reserved Hoodie</h6>
+    <div class="price-tag">
+    <p>Dress</p>
+    <div class="promo">
+      <p>$220.00</p>
+      <p>198.00</p>
+    </div>
+   </div>
+   </div>
+  </div>
+ 
+  <div class="grid">
+    <div class="product-info">
+    <img src="product/top-product-11.png" alt="">
+   <h6>Basic Dress Green</h6>
+   <div class="price-tag">
+    <p>Dress</p>
+    <p>$236.00</p>
+   </div>
+  </div>
+    <div class="product-info">
+    <img src="product/top-product-22.png" alt="">
+    <h6>Nike Air Zoom Pegasus</h6>
+    <div class="price-tag">
+    <p>Shoe</p>
+    <div class="promo">
+      <p>$220.00</p>
+      <p>198.00</p>
+    </div>
+    
+   </div>
+    </div>
+    <div class="product-info">
+    <img src="product/top-product-33.png" alt="">
+    <h6>Nike Repel Miler</h6>
+    <div class="price-tag">
+    <p>Dress</p>
+    <p>$150.50</p>
+   </div>
+    </div>
+    <div class="product-info">
+    <img src="product/top-product-44.png" alt="">
+     <h6>Nike Sportswear Futura Luxe</h6>
+    <div class="price-tag">
+    <p>Glasses</p>
+    <p>$160.00</p>
+   </div>
+   </div>
+  </div>
+ 
+ </div>
+
+
+ <div class="background-img">
+  <img src="images/background.png" alt="">
+  <div class="absolute-img"><img src="images/-Zara_Logo 1.png" alt=""></div>
+  <div class="absolute-img2"><img src="images/2Zara_Logo 2.png" alt=""></div>
+  <div class="absolute-text">
+  <p>Lustrous yet understated. The new evening
+  wear collection exclusively offered at the
+  reopened Giorgio Armani boutique in Los
+  Angeles.</p>
+  <button>See Collection</button>
+  </div>
+ 
+
+ </div>
+ </div>
+
+ <div class="parent">
+ <div class="newsletter">
+   <h1> Best Sellers</h1> 
+  </div>
+  <div class="top-section-product">
+  <div class="product-list">
+    <a href="">All Products</a>
+    <a href="">T-Shirt</a>
+    <a href="">Hoodies</a>
+    <a href="">Jacket</a>
+  </div>
+  <div class="filter-btn">
+    <button>Show All</button>
+  </div>
+  </div>
+  
+  <div class="grid">
+    <div class="product-info">
+    <img src="product/top-product-11.png" alt="">
+   <h6>Basic Dress Green</h6>
+   <div class="price-tag">
+    <p>Dress</p>
+    <p>$236.00</p>
+   </div>
+  </div>
+    <div class="product-info">
+    <img src="product/top-product2.png" alt="">
+    <h6>Nike Sportswear Futura Luxe</h6>
+    <div class="price-tag">
+    <p>Bag</p>
+    <p>$130.00</p>
+   </div>
+    </div>
+    <div class="product-info">
+    <img src="product/top-product-4.png" alt="">
+    <h6>Yellow Reserved Hoodie</h6>
+    <div class="price-tag">
+    <p>Dress</p>
+    <div class="promo">
+      <p>$364.00</p>
+      <p>155.00</p>
+    </div>
+   </div>
+    </div>
+    <div class="product-info">
+    <img src="product/top-product2.png" alt="">
+     <h6>Nike Air Zoom Pegasus</h6>
+    <div class="price-tag">
+    <p>Shoe</p>
+    <div class="promo">
+      <p>$220.00</p>
+      <p>198.00</p>
+    </div>
+   </div>
+   </div>
+  </div> 
+ </div>
+
+ <div class="containerr2">
+<div class="parent">
+<div class="products-discounts"><h2>Follow products and discounts on Instagram</h2></div>
+<div class="insta-img">
+<div><img src="insta-cards/insta1.png" alt=""></div>
+<div><img src="insta-cards/insta2.png" alt=""></div>
+<div><img src="insta-cards/insta3.png" alt=""></div>
+<div><img src="insta-cards/insta4.png" alt=""></div>
+<div><img src="insta-cards/insta5.png" alt=""></div>
+<div><img src="insta-cards/insta6png.png" alt=""></div>
+</div>
+<div class="products-dis">
+<h2>Or subscribe to the newsletter</h2>
+<div class="type-email" >
+<input type="text" name="gmail" placeholder="Email Address...">
+<button>Submit</button>  
+</div>
+
+</div>
+
+</div>
+ </div>
+
+<footer>
+<div class="parentt">
+<div class="footer">
+
+<div class="logoo">
+<img class="log" src="icon/logo.png" alt="">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit, sed do eiusmod tempor incididunt ut labore et 
+dolore magna aliqua</p>
+<div class="social-apps">
+  <img src="icon/faceBook.png" alt="">
+  <img src="icon/twitter.png" alt="">
+  <img src="icon/linkIn.png" alt="">
+  <img src="icon/instag.png" alt="">
+</div>
+</div>
+
+<div class="footer-head">
+  <h6>CATALOG</h6>
+  <p>Necklaces</p>
+  <p>Hoodies</p>
+  <p>Jewelry Box</p>
+  <p>T-shirt</p>
+  <p>Jacket</p>
+</div>
+
+<div class="footer-head">
+  <h6>ABOUT US</h6>
+  <p>Our Producers</p>
+  <p>Sitemap</p>
+  <p>FAQ</p>
+  <p>About Us</p>
+  <p>Terms & Conditions</p>
+</div>
+
+<div class="footer-head">
+  <h6>CUSTOMER SERVICES</h6>
+  <p>Contact Us</p>
+  <p>Track Your Order</p>
+  <p>Product Care & Repair</p>
+  <p>Book an Appointment</p>
+  <p>Shipping & Returns</p>
+</div>
+ </div> 
+</footer>
+
+<footer class="footer2">
+  <div class="parent">
+<div class="footer-flex">
+  <div>
+    <p>© 2022 Coral , Inc.</p>
+  </div>
+  <div><img src="icon/icons_payment 1.png" alt=""></div>
+  <div><button>Scroll to top <img src="icon/top-scroll.png" alt=""></button></div>
+</div>
+
+  </div>
+
+</div>
+</footer>
+
+
+
+</body>
+</html>
